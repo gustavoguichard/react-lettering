@@ -38,6 +38,9 @@ You just need to pass a `className` that will be used in the wrapper and you can
 </h2>
 ```
 
+And with some styles the result can be:
+![screen shot 2015-05-26 at 9 16 03 pm](https://cloud.githubusercontent.com/assets/566971/7826142/71ef23d6-03ec-11e5-8a50-de0dd5ae3f60.png)
+
 ### Dependencies
 
 * React
