@@ -4,8 +4,8 @@ import Lettering from './lettering'
 const App = React.createClass({
   render() {
     return (
-      <Lettering baseClass="custom">
-        <h2>Awesome Title!</h2>
+      <Lettering className="fancyText" tagName="h1" charClass="custom">
+        Awesome Title!\n Here we go!
       </Lettering>
     )
   }
