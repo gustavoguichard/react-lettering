@@ -1,6 +1,37 @@
 <html>
   <head>
     <title>React Lettering</title>
+    <style type="text/css">
+      body {
+        background-color: whitesmoke;
+        font-family: sans-serif;
+        padding: 20px;
+      }
+      .fancyText {
+        padding: 20px;
+      }
+      .custom {
+        background: #e24b3b;
+        background-size: 175%;
+        color: whitesmoke;
+        display: inline-block;
+        width: 50px;
+        height: 70px;
+        font-size: 55px;
+        text-align: center;
+      }
+      .custom:nth-of-type(odd) {
+        -webkit-transform: scale(1) skewY(-15deg);
+        -moz-transform: scale(1) skewY(-15deg);
+        transform: scale(1) skewY(-15deg);
+      }
+      .custom:nth-of-type(even) {
+        background: #A3382D;
+        -webkit-transform: scale(1) skewY(15deg);
+        -moz-transform: scale(1) skewY(15deg);
+        transform: scale(1) skewY(15deg);
+      }
+    </style>
   </head>
   <body>
   </body>
