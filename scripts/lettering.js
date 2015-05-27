@@ -25,13 +25,18 @@ const Lettering = React.createClass({
     return <span key={key} className={`${className} ${key}`}>{elem}{spacer}</span>
   },
   getWrappedChars() {
-    const { children, lineClass, wordClass, charClass } = this.props
-    const childrenArr = children.split('\\n')
-    const lines = childrenArr.map((line, lineIndex) => {
+    let lineIndex, wordIndex, charIndex
+    lineIndex = wordIndex = charIndex = 0
+    const { children, lineClass, wordClass, charClass } = this.props,
+          childrenArr = children.split('\\n')
+    const lines = childrenArr.map(line => {
+      lineIndex += 1
       const wordsArray = line.split(' ')
-      const words = wordsArray.map((word, wordIndex) => {
+      const words = wordsArray.map(word => {
+        wordIndex += 1
         const charsArray = word.split('')
-        const chars = charsArray.map((char, charIndex) => {
+        const chars = charsArray.map(char => {
+          charIndex += 1
           return this.getSpanElement(char, charClass, charIndex)
         })
         return this.getSpanElement(chars, wordClass, wordIndex, ' ')
