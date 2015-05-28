@@ -5,7 +5,7 @@ const App = React.createClass({
   render() {
     return (
       <Lettering className="fancyText" tagName="h1" charClass="custom">
-        Awesome Title!\n Here we go!
+        Awesome Title!\n Stylized!
       </Lettering>
     )
   }
