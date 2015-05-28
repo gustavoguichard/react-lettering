@@ -1,7 +1,7 @@
 import React from 'react'
 import Lettering from './lettering'
 
-const App = React.createClass({
+class App extends React.Component {
   render() {
     return (
       <Lettering className="fancyText" tagName="h1" charClass="custom">
@@ -9,6 +9,6 @@ const App = React.createClass({
       </Lettering>
     )
   }
-})
+}
 
 module.exports = App

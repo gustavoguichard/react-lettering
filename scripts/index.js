@@ -1,6 +1,4 @@
-'use strict';
+const React = require('react'),
+    App = require('./app')
 
-var React = require('react'),
-    App = require('./app');
-
-React.render(<App />, document.getElementById('app'));
+React.render(<App />, document.getElementById('app'))
